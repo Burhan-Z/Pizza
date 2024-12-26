@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-2">
+            <h1 class="text-center">Form Validation</h1>
+            <div class="col-md-12">
+                <form  class="myform" novalidate>
+                    <div class="row my-5">
+                <div class="col-md-6 my-2">
+                    <input type="text" class="form-control" placeholder="First Name" required>
+                    <div class="invalid-feedback">
+                        Please Enter First Name
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <input type="text" class="form-control" placeholder="Last Name" required>
+                    <div class="invalid-feedback">
+                        Please Enter Last Name
+                    </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <input type="text" class="form-control" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Please Enter Email
+                    </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <div class="invalid-feedback">
+                        Please Enter Password
+                    </div>
+                </div>
+
+                <div class="col-md-4 my-2">
+                    <select class="form-control form-select" required>
+                        <option>Choose City</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Multan</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please Enter City
+                    </div>
+                </div> 
+                  <input type="submit" value="submit" class="btn btn-success btn-block">
+                <div class="col-md-12 d-grid text-center my-5" >
+                 
+                 </div>
+        </div>
+
+        </form>
+    </div>
+
+
+
+<script>
+//   Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.myform')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

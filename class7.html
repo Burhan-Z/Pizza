@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 my-5">
+                <h1 class="text-center">Bootstrap Modals</h1>
+            </div>
+
+
+            <div class="col-md-4 my-5">
+                 <div class="card">
+                    <img src="images/car1.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="text-center ">Audi</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est earum maxime nam adipisci doloremque quas rerum ratione illo at aut ipsum odio ab, ipsa quia repellat quidem praesentium minima enim sit natus voluptas harum! Consequuntur omnis itaque ratione voluptatum nemo voluptas enim minima quidem rerum doloremque. Nostrum a vel minima?</p>
+                        <a href="" class="btn btn-dark text-center" data-bs-toggle="modal" data-bs-target="#mod1">View More</a>
+                    </div>
+                 </div>
+            </div>
+                 
+            <div class="col-md-4 my-5">
+                <div class="card">
+                    <img src="images/car2.jpg" alt="" class="img-fluid">
+                      <div class="card-body">
+                          <h3 class="text-center">BMW</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dignissimos ullam beatae, nobis consectetur eligendi at labore praesentium reprehenderit deserunt, consequatur nam incidunt dorovident unde. Ex nemo tenetur perferendis, magnam minima sit, debitis iure at tempora voluptatem eius.</p>
+                          <a href="" class="btn btn-warning">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-5">
+                <div class="card">
+                    <img src="images/car3.jpg" alt="" class="img-fluid">
+                      <div class="card-body">
+                          <h3 class="text-center">BMW</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam dignissimos ullam beatae, nobis consectetur eligendi at labore praesentium reprehenderit deserunt, consequatur nam incidunt dohjhjhdent unde. Ex nemo tenetur perferendis, magnam minima sit, debitis iure at tempora voluptatem eius.</p>
+                          <a href="" class="btn btn-warning">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+            <!-- ---kid-------- -->
+            <div class="col-md-4 my-5">
+                <div class="card text-center">
+                    <img src="images/1.jpg" alt="" class="img-fluid">
+                      <div class="card-body">
+                          <h3 class="text-center">Kids 3 Piece Net Suit Stitched | 2261-AF-NT</h3>
+                          
+                          <a href="" class="btn btn-dark" data-bs-target="#kid" data-bs-toggle="modal">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+         
+        <!-- ----------modal 1--------- -->
+        <div class="modal" id="mod1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Order Now</h3>       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>                
+                    </div>
+                    
+                    <div class="modal-body">
+                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et consequatur numquam perferendis quae exercitationem nostrum aut modi fugiat in doloribus sunt minima possimus magnam nisi, recusandae repellat aliquam. Earum, inventore.</p>                  
+                    </div>
+                    
+                    <div class="modal-footer">
+                      <button class="btn btn-dark"> Confirm</button>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------modal 2--------- -->
+        <div class="modal fade" id="kid">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Order Now</h3>       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>                
+                    </div>
+                    
+                    <div class="modal-body">
+                       <div class="row">
+                           <div class="col-md-5">
+                            <img src="images/1.jpg" alt="" class="img-fluid">
+
+                           </div>
+                           <div class="col-md-7">
+                            <h1>Kids 3 Piece Net Suit Stitched | 2261-AF-NT</h1>
+
+                             <h6 class="display-6">Rs.6,750.00</h6>
+                            <h4 class="display-6 my-5">Shipping calculated at checkout.</h4>
+                            <div class="d-grid mt-5">
+                                <button class="btn btn-lg btn-outline-dark btn-block" data-bs-target="#form" data-bs-toggle="modal">Add to Cart</button>
+                               </div>
+
+                            <div class="d-grid mt-2 ">
+                                <button class="btn btn-lg btn-dark btn-block">Buy it Now</button>
+                               </div>
+
+
+
+                           </div>
+                           
+                          
+                            
+
+
+
+                       </div>                
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- form -->
+        <div class="modal" id="form">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Order Now</h3>       
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>                
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                          </form>                
+                    </div>
+                    
+                    <div class="modal-footer">
+                      <button class="btn btn-dark"> Confirm</button>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</body>
+</html>
